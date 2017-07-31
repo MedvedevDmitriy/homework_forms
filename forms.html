@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>FORMS</title>
+	<link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+	<div class="main-header">
+		<div class="main-header_buttons">
+			<input class="main-header_button-form" type="button" onclick="showForm_1()" value="FORM_1"/>
+			<input class="main-header_button-form" type="button" onclick="showForm_2()" value="FORM_2"/>
+			<input class="main-header_button-form" type="button" onclick="showForm_3()" value="FORM_3"/>
+			<input class="main-header_button-form" type="button" onclick="showForm_4()" value="FORM_4"/>
+			<input class="main-header_button-close" type="button" onclick="closeForm()" value="CLOSE_FORM"/>
+		</div>
+		<div class="main-header_links">
+			<a class="main-header_link" href="images/1.png">photo1</a>
+			<a class="main-header_link" href="images/2.png">photo2</a>
+			<a class="main-header_link" href="images/3.png">photo3</a>
+			<a class="main-header_link" href="images/4.png">photo4</a>
+		</div>
+	</div>
+	<form id="form_1" action="" method="" class="container1">
+		<fieldset class="container1_fieldset1">
+
+			<div class="authorization-login">
+				<div class="authorization-login_label">
+					<label for="login">Ф.И.О.</label>
+				</div>
+				<div class="authorization-login_input">
+					<input type="text" id="login" name="login"/>
+				</div>	
+			</div>
+
+			<div class="authorization-email">
+				<div class="authorization-email_label">
+					<label for="email">E-mail</label>
+				</div>
+				<div class="authorization-email_input">
+					<input type="email" id="email" name="email"/>
+				</div>
+			</div>
+
+			<div class="authorization-psw">
+				<div class="authorization-psw_label">
+					<label for="psw">Пароль</label>
+				</div>
+				<div class="authorization-psw_input">
+					<input type="password" id="psw" name="psw"/>
+				</div>
+			</div>
+
+			<div class="authorization-psw2">
+				<div class="authorization-psw2_label">
+					<label for="psw2">Повтор пароля</label>
+				</div>
+				<div class="authorization-psw2_input">
+					<input type="password" id="psw2" name="psw2"/>
+				</div>
+			</div>
+
+			<div class="chekbox-main">
+				<div class="chekbox-main_input">
+					<input type="checkbox" id="check" name="check"/>
+				</div>
+				<div class="chekbox-main_label">
+					<label for="check">Я принимаю пользовательское соглашение</label>
+				</div>
+			</div>
+
+			<input class="sumbit_form1" type="submit" value="Зарегистрироваться"/>
+		</fieldset>
+	</form>
+
+	<form id="form_2" action="" method="" class="container2">
+		<fieldset class="container2_fieldset1">
+			<h2>Account Information</h2>
+
+			<div class="account-log">
+				<div class="account-log_login">
+					<label for="loginName">Login Name*</label>
+				</div>
+				<div class="account-log_input">
+					<input type="text" id="loginName" name="loginName" required/>
+				</div>
+			</div>
+
+			<div class="account-pas">
+				<div class="account-pas_password">
+					<label for="pass">Password*</label>
+				</div>
+				<div class="account-pas_input">
+					<input type="password" id="pass" name="pass" required/>
+				</div>
+			</div>
+
+			<div class="account-confirm-pas">
+				<div class="account-confirm-pas_password2">
+					<label for="confirmPass">Confirm Password*</label>
+				</div>
+				<div class="account-confirm-pas_input2">
+					<input type="password" id="confirmPass" name="confirmPass" required/>
+				</div>
+			</div>
+
+			<div class="account-email">
+				<div class="account-email_email">
+					<label for="emailAddress">Email Address*</label>
+				</div>
+				<div class="account-email_input">
+					<input type="email" id="emailAddress" name="emailAddress" required/>
+				</div>
+			</div>
+
+			<div class="account-confirm-email">
+				<div class="account-confirm-email_email2">
+					<label for="confirmEmail">Confirm Email*</label>
+				</div>
+				<div class="account-confirm-email_input2">
+					<input type="email" id="confirmEmail" name="confirmEmail" required/>
+				</div>
+			</div>	
+		</fieldset>
+
+		<fieldset class="container2_fieldset2">
+			<h2>Contact Information</h2>
+
+			<div class="contact-fname">
+				<div class="contact-fname_fname">
+					<label for="fname">First Name*</label>
+				</div>
+				<div class="contact-fname_input">
+					<input type="text" id="fname" name="fname" required/>
+				</div>
+			</div>
+
+			<div class="contact-lname">
+				<div class="contact-lname_lname">
+					<label for="lname">Last Name*</label>
+				</div>
+				<div class="contact-lname_input">
+					<input type="text" id="lname" name="lname" required/>
+				</div>
+			</div>
+
+			<div class="contact-address1">
+				<div class="contact-address1_address1">
+					<label for="address1">Address 1*</label>
+				</div>
+				<div class="contact-address1_input">
+					<input type="text" id="address1" name="address1" required/>
+				</div>
+			</div>
+
+			<div class="contact-address2">
+				<div class="contact-address2_address2">
+					<label for="address2">Address 2*</label>
+				</div>
+				<div class="contact-address2_input">
+					<input type="text" id="address2" name="address2" required/>
+				</div>
+			</div>
+
+			<div class="contact-city">
+				<div class="contact-city_city">
+					<label for="city">City*</label>
+				</div>
+				<div class="contact-city_input">
+					<input type="text" id="city" name="city" required/>
+				</div>
+			</div>
+
+			<div class="contact-state">
+				<div class="contact-state_sop">
+					<label>State or Province*</label>
+				</div>
+				<div class="contact-state_select">
+					<select required>
+						<option>Select...</option>
+					</select>
+				</div>
+			</div>
+
+			<div class="contact-zip">
+				<div class="contact-zip_zip"> 
+					<label for="zip">Zip*</label>
+				</div>
+				<div class="contact-zip_input">
+					<input type="text" id="zip" name="zip" required/>
+				</div>
+			</div>
+
+			<div class="contact-country">
+				<div class="contact-country_country">
+					<label for="country">Country*</label>
+				</div>
+				<div class="contact-country_input">
+					<input type="text" id="country" name="country" required/>
+				</div>
+			</div>
+
+			<div class="gender">
+				<div class="gender_header">
+					<label>Gender*</label>
+				</div>			
+				<div class="gender_first">
+					<div class="gender_first-input1">
+						<input type="radio" id="genderFemale" name="gender" required/>
+					</div>
+					<div class="gender_first-label1">
+						<label for="genderFemale">Female</label>
+					</div>
+				</div>
+				<div class="gender_second">
+					<div class="gender_second-input2">
+						<input type="radio" id="genderMale" name="gender" required/>
+					</div>
+					<div class="gender_second-label2">
+						<label for="genderMale">Male</label>
+					</div>
+				</div>	
+			</div>	
+		</fieldset>
+
+		<fieldset class="container2_fieldset3">
+			<h2>Misc. Information</h2>
+
+			<div class="info">
+				<div class="info_income">
+					<label>Annual Household Income</label>
+				</div>
+				<div class="info_select">
+					<select>
+						<option>Select...</option>
+					</select>
+				</div>
+			</div>
+
+			<div class="interests">
+				<div class="interests_header">
+					<label>Interests</label>
+				</div>			
+				<div class="interests-shopingFashion">
+					<div class="interests-shopingFashion_input">
+						<input type="checkbox" id="shopingFashion"/>
+					</div>
+					<div class="interests-shopingFashion_label">
+						<label for="shopingFashion">Shopping/fashion</label>
+					</div>
+				</div>
+				<div class="interests-sports">
+					<div class="interests-sports_input">
+						<input type="checkbox" id="sports"/>
+					</div>
+					<div class="interests-sports_label">
+						<label for="sports">Sports</label>
+					</div>
+				</div>
+				<div class="interests-travel">
+					<div class="interests-travel_input">
+						<input type="checkbox" id="travel"/>
+					</div>
+					<div class="interests-travel_label">
+						<label for="travel">Travel</label>
+					</div>
+				</div>	
+			</div>	
+
+			<div class="eyeColor">
+				<div class="eyeColor_header">
+					<label>Eye Color</label>
+				</div>			
+				<div class="eyeColor-red">
+					<div class="eyeColor-red_input">
+						<input type="checkbox" id="redEye"/>
+					</div>
+					<div class="eyeColor-red_label">
+						<label for="redEye">Red</label>
+					</div>
+				</div>
+				<div class="eyeColor-green">
+					<div class="eyeColor-green_input">
+						<input type="checkbox" id="greenEye"/>
+					</div>
+					<div class="eyeColor-green_label">
+						<label for="greenEye">Green</label>
+					</div>
+				</div>
+				<div class="eyeColor-brown">
+					<div class="eyeColor-brown_input">
+						<input type="checkbox" id="brownEye"/>
+					</div>
+					<div class="eyeColor-brown_label">
+						<label for="brownEye">Brown</label>
+					</div>
+				</div>	
+				<div class="eyeColor-blue">
+					<div class="eyeColor-blue_input">
+						<input type="checkbox" id="blueEye"/>
+					</div>
+					<div class="eyeColor-blue_label">
+						<label for="blueEye">Blue</label>
+					</div>
+				</div>	
+			</div>
+			<input type="submit" value="Submit"/>
+			<input type="reset" value="Reset"/>
+		</fieldset>
+	</form>
+
+	<form id="form_3" action="" method="" class="container3">
+		<fieldset class="container3_fieldset1">
+			<h4>Please take a moment to tell us what you think about our site:</h4>
+
+			<div class="opinion-name">
+				<div class="opinion-name_label">
+					<label for="name">Name:</label>
+				</div>
+				<div class="opinion-name_input">
+					<input type="text" id="name" name="name"/>
+				</div>	
+			</div>
+
+			<div class="opinion-email">
+				<div class="opinion-email_label">
+					<label for="mail">E-mail:</label>
+				</div>
+				<div class="opinion-email_input">
+					<input type="email" id="mail" name="mail"/>
+				</div>
+			</div>
+
+			<div class="question">
+				<div class="question_label">
+					<label>How frequently do you visit our site?:</label>
+				</div>
+				<div class="question_select">
+					<select>
+						<option>Site frequency:</option>
+					</select>
+				</div>
+			</div>
+
+			<div class="products">
+				<div class="products_header">
+					<label>I frequently purchase the following products from our site</label>
+				</div>			
+				<div class="products-software">
+					<div class="products-software_input">
+						<input type="checkbox" id="software" name="software"/>
+					</div>
+					<div class="products-software_label">
+						<label for="software">Software</label>
+					</div>
+				</div>
+				<div class="products-cookware">
+					<div class="products-cookware_input">
+						<input type="checkbox" id="cookware" name="cookware"/>
+					</div>
+					<div class="products-cookware_label">
+						<label for="cookware">Cookware</label>
+					</div>
+				</div>
+				<div class="products-hats">
+					<div class="products-hats_input">
+						<input type="checkbox" id="hats" name="hats"/>
+					</div>
+					<div class="products-hats_label">
+						<label for="hats">Chef's Hats</label>
+					</div>
+				</div>	
+			</div>
+
+			<div class="asset">
+				<div class="asset_header">
+					<label>Our site's greatest asset is:</label>
+				</div>			
+				<div class="asset-productSelection">
+					<div class="asset-productSelection_input">
+						<input type="radio" id="productSelection" name="productSelection"/>
+					</div>
+					<div class="asset-productSelection_label">
+						<label for="productSelection">Product selection</label>
+					</div>
+				</div>
+				<div class="asset-coolDesign">
+					<div class="asset-coolDesign_input">
+						<input type="radio" id="coolDesign" name="coolDesign"/>
+					</div>
+					<div class="asset-coolDesign_label">
+						<label for="coolDesign">Cool design</label>
+					</div>
+				</div>	
+				<div class="asset-customerService">
+					<div class="asset-customerService_input">
+						<input type="radio" id="customerService" name="customerService"/>
+					</div>
+					<div class="asset-customerService_label">
+						<label for="customerService">Customer Service</label>
+					</div>
+				</div>	
+			</div>	
+			
+			<div class="comments">
+				<div class="comments_label">
+					<label for="comments">Comments</label>
+				</div>
+				<div class="comments_input">
+					<input type="textarea" id="comments" name="comments"/>
+				</div>
+			</div>
+
+			<input type="submit" value="Submit!"/>
+		</fieldset>
+	</form>
+
+	<form id="form_4" action="" method="" class="container4">
+		<fieldset class="container4_fieldset1">
+			<h2>Novell Services Login</h2>
+
+			<div class="novell-username">
+				<div class="novell-username_label">
+					<label for="username">Username:</label>
+				</div>
+				<div class="novell-username_input">
+					<input type="text" id="username" name="username"/>
+				</div>
+			</div>
+
+			<div class="novell-password">
+				<div class="novell-password_label">
+					<label for="passw">Password:</label>
+				</div>
+				<div class="novell-password_input">
+					<input type="password" id="passw" name="passw"/>
+				</div>	
+			</div>
+
+			<div class="novell-city">
+				<div class="novell-city_label">
+					<label for="cityOfEmployment">City of Employment:</label>
+				</div>
+				<div class="novell-city_input">
+					<input type="text" id="cityOfEmployment" name="cityOfEmployment"/>
+				</div>	
+			</div>
+
+			<div class="webServer">
+				<div class="webServer_label">
+					<label>Web server:</label>
+				</div>
+				<div class="webServer_select">
+					<select>
+						<option>-Choose a server-</option>
+					</select>
+				</div>	
+			</div>
+
+			<div class="role">
+				<div class="role_header">
+					<label>Please specify your role:</label>
+				</div>			
+				<div class="role-admin">
+					<div class="role-admin_input">
+						<input type="radio" id="admin" name="admin"/>
+					</div>
+					<div class="role-admin_label">
+						<label for="admin">Admin</label>
+					</div>
+				</div>
+				<div class="role-engineer">
+					<div class="role-engineer_input">
+						<input type="radio" id="engineer" name="engineer"/>
+					</div>
+					<div class="role-engineer_label">
+						<label for="engineer">Engineer</label>
+					</div>
+				</div>	
+				<div class="role-manager">
+					<div class="role-manager_input">
+						<input type="radio" id="manager" name="manager"/>
+					</div>
+					<div class="role-manager_label">
+						<label for="manager">Manager</label>
+					</div>
+				</div>	
+				<div class="role-guest">
+					<div class="role-guest_input">
+						<input type="radio" id="guest" name="guest"/>
+					</div>
+					<div class="role-guest_label">
+						<label for="guest">Guest</label>
+					</div>
+				</div>
+			</div>
+
+			<div class="signon">
+				<div class="signon_header">
+					<label>Single Sign-on to the following:</label>
+				</div>			
+				<div class="signon-mail">
+					<div class="signon-mail_input">
+						<input type="checkbox" id="mail2" name="mail2"/>
+					</div>
+					<div class="signon-mail_label">
+						<label for="mail2">Mail</label>
+					</div>
+				</div>
+				<div class="signon-payroll">
+					<div class="signon-payroll_input">
+						<input type="checkbox" id="payroll" name="payroll"/>
+					</div>
+					<div class="signon-payroll_input">
+						<label for="payroll">Payroll</label>
+					</div>
+				</div>
+				<div class="signon-selfService">
+					<div class="signon-selfService_input">
+						<input type="checkbox" id="selfService" name="selfService"/>
+					</div>
+					<div class="signon-selfService_input">
+						<label for="selfService">Self-service</label>
+					</div>
+				</div>	
+			</div>	
+			
+			<input type="submit" value="Login"/>
+			<input type="reset" value="Reset"/>
+		</fieldset>
+	</form>
+	<script src="scripts.js" type="text/javascript"></script>
+</body>
+</html>
